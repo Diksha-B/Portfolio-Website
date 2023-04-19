@@ -13,7 +13,7 @@ Footer Active Button Color : #ECAE0D;
 
 body {
         background-color: #ffffff;
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: 'Source Sans Pro', sans-serif;
         font-size: 16px; /* Sets the font size to 16px */
         font-weight: 300; /* Sets the font weight to 300 */
         line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -26,12 +26,14 @@ body {
         line-height: 1.4;
         }
     h1 {
+        font-family: 'Montserrat Alternates', sans-serif;
         font-size: 2.75em;
-        font-weight: 700;
+        font-weight: 900;
         }
     h2 {
+        font-family: 'Montserrat Alternates', sans-serif;
         font-size: 2.25em;
-        font-weight: 700;
+        font-weight: 600;
         }
     h3 {
         font-size: 1.75em;
