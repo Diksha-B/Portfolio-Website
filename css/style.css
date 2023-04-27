@@ -10,7 +10,36 @@ Active Button Color : #000000;
 Footer Active Button Color : #F4F1F1;
 Footer Active Button Color : #ECAE0D;
 */
-
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: #BC8C8F;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    margin: 10px;
+    border-bottom: 3px solid #4a4a4a;
+        }
+        * {
+            box-sizing: border-box;
+            }
+    nav > ul {
+        list-style-type: none; /* This removed the bullet point (bullets)*/
+        padding: 0;
+            }
+    nav > ul > li {
+        display: inline-block; /* This makes all button aligned in 1 row*/
+                    } 
+    nav > ul > li > a {
+        padding: 0 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #4a4a4a;
+                    }
 body {
         background-color: #ffffff;
         font-family: 'Source Sans Pro', sans-serif;
@@ -26,6 +55,7 @@ body {
         line-height: 1.4;
         }
     h1 {
+        text-align: center; /* Centers text */
         font-family: 'Montserrat Alternates', sans-serif;
         font-size: 2.75em;
         font-weight: 900;
@@ -114,3 +144,25 @@ body {
                             #my-link {/* id selector */
                                 color: green;
                             }
+                            /* Layout styling */
+    .container {
+                padding: 0 15px;
+                }
+    .row {
+            margin: 25px 0; /* 25px top and bottom, 0 left and right */
+            padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+            }
+    .logo {
+        max-width: 48px;
+        text-align: center;
+        }
+    #hero {
+            padding: 20px 0;
+            display: inline-block;
+            width: 100%;
+            }
+    #hero h1 {
+                background-color: #BC8C8F;
+                margin: 0;
+                padding: 0.67em 0;
+                }
