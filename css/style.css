@@ -84,7 +84,7 @@ body {
         width: 100%;
         }
         p {
-           padding: 15px;
+        padding: 10px;
         }
     a {
         color: #ffffff;
@@ -196,6 +196,7 @@ body {
             padding: 20px 0;
             display: inline-block;
             width: 100%;
+            border-bottom: 1px solid #4a4a4a;
             }
     #hero h1 {
                 background-color: #BC8C8F;
@@ -212,10 +213,14 @@ body {
     .social > svg {
         height: 48px;
         width: auto;
+        padding: 7px 2px;
+        margin: 40px 0;
     }
     .social > img {
         height: 48px;
         width: auto;
+        padding: 7px 2px;
+        margin: 40px 0;
     }
     .sun {
         animation-duration: 4s;
