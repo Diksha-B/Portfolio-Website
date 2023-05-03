@@ -13,6 +13,15 @@ Footer Active Button Color : #ECAE0D;
 * {
     box-sizing: border-box;
 }
+/* Layout styling */
+
+html { 
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0 15px;
+}
 header {
     background-color: #ffffff;
     position: relative;
@@ -48,11 +57,8 @@ body {
         line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
         color: #352F2F;
         }
-    h1,
-    h2,
-    h3,
-    h4 {
-        line-height: 1.4;
+    h1,h2,h3,h4 {
+        line-height: normal;
         }
     h1 {
         text-align: center; /* Centers text */
@@ -77,21 +83,21 @@ body {
     img {
         width: 100%;
         }
-        a {
+    a {
         color: #ffffff;
         text-decoration: none; /* No underlining */
         }
-        a:hover {
+    a:hover {
         color: #ECAE0D;
         text-decoration: underline; /* Underlining when hovering over a link */
         }
-        a:visited { /* visited link */
+    a:visited { /* visited link */
         color: #ffffff;
         }
-        a:active { /* selected link */
+    a:active { /* selected link */
         color: #994c30;
         }
-        a:focus {
+    a:focus {
         color: #cc6540;
         text-decoration: underline;
         }
@@ -101,7 +107,10 @@ body {
             color: #000000; /* needed to override the default link color */
             text-transform: capitalize;
             font-weight: 400;
-            padding: 10px;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             border-radius: 3px;
             border-bottom: 2px solid #000000;
             transition-duration: 0.2s;
@@ -125,6 +134,10 @@ body {
     .button.project {
             background-color: #000000;
             color: #ffffff;
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
             text-transform: capitalize;
             border: 2px solid #000000;
                             }
@@ -148,12 +161,18 @@ body {
                                 color: green;
                             }
                             /* Layout styling */
-    .container {
-                padding: 0 15px;
-                }
     .row {
             margin: 25px 0; /* 25px top and bottom, 0 left and right */
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
             padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;
+            }
+    .row#prototype {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
             }
     .row::after {
                 content: "";
@@ -161,7 +180,7 @@ body {
                 display: table;
                 }
     .logo {
-        max-width: 48px;
+        max-width: 76px;
         text-align: center;
         }
     #hero {
@@ -173,6 +192,13 @@ body {
                 background-color: #BC8C8F;
                 margin: 0;
                 padding: 0.67em 0;
+                }
+    footer {
+            background-color: #BC8C8F;
+            border-bottom: 3px solid #BC8C8F;
+            color: #ffffff;
+            padding: 20px 40px;
+            text-align: center;
                 }
     .social > svg {
         height: 48px;
@@ -224,7 +250,7 @@ Medium devices (640px and larger)
 	}
     header {
         text-align: unset;
-        padding: 20px 0 81px;
+        padding: 20px 0 11px;
         }
         nav {
             width: auto;
@@ -246,9 +272,4 @@ Large devices (1024px or larger)
             margin-left: auto;
             margin-right: auto;
                         }
-}
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
 }
