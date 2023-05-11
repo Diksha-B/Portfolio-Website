@@ -26,10 +26,9 @@ header {
     background-color: #ffffff;
     position: fixed;
     width:100%;
-    text-align: center;
-    padding-top: 10px;
+    padding-top: 21px;
     padding-right: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 1px;
     padding-left: 5px;
     border-bottom: 3px solid #4a4a4a;
         }
@@ -39,6 +38,7 @@ header {
     nav > ul {
         list-style-type: none; /* This removed the bullet point (bullets)*/
         padding: 0;
+        margin: 0;
             }
     nav > ul > li {
         display: inline-block; /* This makes all button aligned in 1 row*/
@@ -49,6 +49,32 @@ header {
         font-weight: 700;
         color: #4a4a4a;
                     }
+    .navtoggle li:not(:last-child) {
+        display: none;
+                    }
+    .navtoggle, .navtoggle.responsive {
+        position: relative;
+                            }
+    .navtoggle li .icon {
+        position: absolute;
+        right: 0;
+        top: 2px;
+        font-size: 35px;
+        padding-right: 0;
+        transition: .7s;
+                    }
+    .navtoggle.responsive nav {
+        padding: 24px 0 0;
+                            }
+    .navtoggle.responsive li  {
+        display: block;
+        padding: 10px 0;
+        text-align: end;
+        transition: .5s ease-in-out;
+                            }
+    .navtoggle.responsive li:last-child  {
+        padding: 0 0 10px;
+                            }
 body {
         background-color: #ffffff;
         font-family: 'Source Sans Pro', sans-serif;
@@ -300,5 +326,11 @@ Large devices (1024px or larger)
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+        .navtoggle li:not(:last-child) {
+            display: inline-block;
+                }
+        .navtoggle li:last-child {
+            display: none;
+                }
                         }
-}
+                    }
