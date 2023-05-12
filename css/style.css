@@ -23,7 +23,7 @@ html {
     padding: 0 15px;
 }
 header {
-    background-color: #ffffff;
+    background-color: #f2e8e8;
     position: fixed;
     width:100%;
     padding-top: 21px;
@@ -61,7 +61,13 @@ header {
         top: 2px;
         font-size: 35px;
         padding-right: 0;
-        transition: .7s;
+        transition: .5s;
+                    }
+    .navtoggle li .icon:hover {
+        border-radius: 0.1em;
+        padding: 0px 17px;
+        background-color: #F2E8E8;
+
                     }
     .navtoggle.responsive nav {
         padding: 24px 0 0;
@@ -71,9 +77,32 @@ header {
         padding: 10px 0;
         text-align: end;
         transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+                                }
+    .navtoggle.responsive li:hover {
+        padding: 10px 24px;
+        background-color: #F2E8E8;
                             }
     .navtoggle.responsive li:last-child  {
         padding: 0 0 10px;
+                            }
+    .navtoggle.responsive nav {
+                                text-align: end;
+                                width: auto;
+                                margin-bottom: 8px;
+                                margin-top: 42px;
+                                /*border-radius: 8px;
+                                background-color: #3c2033;*/
+                                float: right;
+                            }
+    .navtoggle.responsive li .icon {
+        background-color: #F2E8E8;
+        right: 0;
+        top: 2px;
+        font-size: 35px;
+        padding-right: 0;
+
+        transition: .7s;
                             }
 body {
         background-color: #ffffff;
@@ -129,7 +158,7 @@ body {
         color: #0b0908;
         }
     a:focus {
-        color: #cc6540;
+        color: #ECAE0D;
         text-decoration: underline;
         }
     .button {
@@ -322,10 +351,15 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+    nav {
+        width: auto;
+        float: right;
+    }
         .container {
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+
         .navtoggle li:not(:last-child) {
             display: inline-block;
                 }
