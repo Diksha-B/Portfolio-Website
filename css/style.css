@@ -67,7 +67,6 @@ header {
         border-radius: 0.1em;
         padding: 0px 17px;
         background-color: #F2E8E8;
-
                     }
     .navtoggle.responsive nav {
         padding: 24px 0 0;
@@ -87,13 +86,13 @@ header {
         padding: 0 0 10px;
                             }
     .navtoggle.responsive nav {
-                                text-align: end;
-                                width: auto;
-                                margin-bottom: 8px;
-                                margin-top: 42px;
-                                /*border-radius: 8px;
-                                background-color: #3c2033;*/
-                                float: right;
+        text-align: end;
+        width: auto;
+        margin-bottom: 8px;
+        margin-top: 42px;
+        /*border-radius: 8px;
+        ackground-color: #3c2033;*/
+        float: right;
                             }
     .navtoggle.responsive li .icon {
         background-color: #F2E8E8;
@@ -101,8 +100,20 @@ header {
         top: 2px;
         font-size: 35px;
         padding-right: 0;
-
         transition: .7s;
+                            }
+    .nav-button {
+        color: #352F2F;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 0 15px;
+
+        text-align: center;
+                }
+    .nav-button:hover,
+    .nav-button:focus {
+        text-decoration: underline;
                             }
 body {
         background-color: #ffffff;
@@ -152,7 +163,7 @@ body {
         text-decoration: underline; /* Underlining when hovering over a link */
         }
     a:visited { /* visited link */
-        color: #ffffff;
+        color: #352F2F;
         }
     a:active { /* selected link */
         color: #0b0908;
